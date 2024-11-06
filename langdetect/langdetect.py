@@ -11,7 +11,7 @@ class LangDetector(object):
 	…【】（）《》？“”‘’！[\\]^_`{|}~0-9]+'''
     lang_patternlist = {
         'zh': re.compile(u"[\u4e00-\u9fff]"),
-        'en': re.compile(u'[a-z][A-Z]'),
+        'en': re.compile(u'[a-zA-Z]'),
         'ja': re.compile(u'[\u30a0-\u30ff\u3040-\u309f]'),
         'ko': re.compile(u'[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f]')
     }
